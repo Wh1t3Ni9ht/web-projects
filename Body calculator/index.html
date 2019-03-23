@@ -1,0 +1,99 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Body Calculator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="section">
+			<div class="container is-fluid">
+				<div class="main">
+					<div class="header">
+						<div class="title is-1 has-text-centered">Body Calculator</div>
+					</div>
+					<div class="section">
+						<div class="columns">
+							<div class="column is-half is-offset-one-quarter">
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+										<label class="label">Weight in KG</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input id="weight" type="number" class="input is-info is-rounded" placeholder="Input weight">
+											</div>
+										</div>
+									</div>
+								</div><!-- End of field-horizontal -->
+							</div><!-- Column -->
+						</div><!-- Columns -->
+
+						<div class="columns">
+							<div class="column is-half is-offset-one-quarter">
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+										<label class="label">Height in meters</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input id="height" type="number" class="input is-info is-rounded" placeholder="Input height">
+											</div>
+										</div>
+									</div>
+								</div><!-- End of field-horizontal -->
+							</div><!-- Column -->
+						</div><!-- Columns -->
+
+						<div class="columns">
+							<div class="column is-4 is-offset-5">
+								<div class="select is-rounded is-success">
+									<select id="select"></select>
+								</div>
+								<div class="radio">
+									<label><input id="male" type="radio" name="Gender" value="Male"> Male</label>
+									<label><input id="female" type="radio" name="Gender" value="Female"> Female</label>
+								</div>
+							</div><!-- Column -->
+						</div><!-- Columns -->
+
+						<div class="columns">
+							<div class="column is-2 is-offset-5">
+								<input id="calculate" type="submit" class="button is-success is-outlined is-rounded is-fullwidth" value="Click">
+							</div>
+						</div>
+
+						<div class="columns">
+							<div class="column">
+								<div class="message is-success">
+									<div class="message-header">
+										<div>BMI<span id="bmiRes"></span></div>
+									</div>
+									<div class="message-body">
+										Body mass index (BMI) is a measure of body fat based on your weight in relation to your height, and applies to most adult men and women aged 18 and over. For children aged 2 and over, BMI percentile is the best assessment of body fat.
+									</div>
+								</div>
+							</div>
+
+							<div class="column">
+								<div class="message is-info">
+									<div class="message-header">
+										<div>BMR<span id="bmrRes"></span></div>
+									</div>
+									<div class="message-body">
+										BMR (Basal Metabolic Rate) is an estimate of how many calories you'd burn if you were to do nothing but rest for 24 hours. It represents the minimum amount of energy needed to keep your body functioning.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- End of section -->
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
