@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+  </head>
+  <body class="bg-dark text-white">
+    <header class="bg-secondary text-center p-3 mb-5">
+      <h1>Word Beater</h1>
+    </header>
+    <div class="container"><!-- Container -->
+      <div class="row"><!-- First row begins -->
+        <div class="col-md-6 offset-md-3 text-center"><!-- Main content -->
+          <h3>Enter the given word within <span class="text-success" id="seconds">
+            <select id="select" onchange="selectedLevel()">
+              <option>5</option>
+              <option>3</option>
+              <option>1</option>
+            </select>
+          </span> seconds</h3>
+          <h1 id="currentWord">Hello</h1>
+          <input id="userInput" type="text" name="userInput" class="form-control " autofocus>
+          <h4 id="message"></h4>
+          <div class="row"><!-- Second row begins -->
+            <div class="col-md-6">
+              <h3>Time Left: <span id="timeDisplay">0</span></h3>
+            </div>
+            <div class="col-md-6">
+              <h3>Score: <span id="scoreDisplay">0</span></h3>
+              <h3>High Score: <span id="highScoreDisplay">0</span></h3>
+            </div>
+          </div><!-- Second row ends -->
+        </div><!-- Main content -->
+      </div><!-- First row ends -->
+    </div><!-- Container -->
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
