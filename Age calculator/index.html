@@ -23,7 +23,7 @@
                 <div class="field-body">
                   <div class="field">
                     <p class="control">
-                      <input id="yearValue" class="input is-warning" type="number" placeholder="Year of birth">
+                      <input id="year-input" class="input is-warning" type="number" placeholder="Year of birth">
                     </p>
                   </div>
                 </div><!-- End of fiels body -->
@@ -40,7 +40,7 @@
                 <div class="field-body">
                   <div class="field">
                     <p class="control">
-                      <input id="monthValue" class="input is-warning" type="number" placeholder="Month of birth">
+                      <input id="month-input" class="input is-warning" type="number" placeholder="Month of birth">
                     </p>
                   </div>
                 </div><!-- End of fiels body -->
@@ -57,7 +57,7 @@
                 <div class="field-body">
                   <div class="field">
                     <p class="control">
-                      <input id="dateValue" class="input is-warning" type="number" placeholder="Date of birth">
+                      <input id="date-input" class="input is-warning" type="number" placeholder="Date of birth">
                     </p>
                   </div>
                 </div><!-- End of fiels body -->
@@ -65,14 +65,16 @@
             </div>
           </div><!-- End of columns -->
 
+          <div class="columns danger" id="error-msg"></div>
+          
           <div class="columns">
             <div class="column is-one-quarter is-offset-5">
-                <input id="button" class="button is-fullwidth" value="Check!" type="button">
+                <input id="check-age-btn" class="button is-fullwidth" value="Check!" type="button">
             </div>
           </div>
 
           <div class="columns">
-            <div id="notification" class="column is-half is-offset-one-quarter">
+            <div id="notification" class="column is-one-quarter is-offset-5">
               <div id="result" class="subtitle is-3 has-text-centered"></div>
             </div>
           </div>
