@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">What's your age?</h1>
+        <form class="form">
+            <div class="inputs-container" id="form-input">
+                <div class="input_container">
+                    <label class="input_label">Date of birth</label>
+                    <input type="datetime" id="date-input" class="input_box" placeholder="Date..." autocomplete="off">
+                </div>
+
+                <div class="input_container">
+                    <label class="input_label">Month of birth</label>
+                    <input type="datetime" id="month-input" class="input_box" placeholder="Month..." autocomplete="off">
+                </div>
+                
+                <div class="input_container">
+                    <label class="input_label">Year of birth</label>
+                    <input type="datetime" id="year-input" class="input_box" placeholder="Year..." autocomplete="off">
+                </div>
+            </div>
+
+            <div class="chk-btn-container">
+                <button type="submit" id="chk-btn" class="chk_btn">Check age</button>
+            </div>
+        </form>
+
+        <div id="result-container" class="result-container" hidden></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
