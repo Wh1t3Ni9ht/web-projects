@@ -1,0 +1,151 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  color: white;
+  background-color: #131313;
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.form_container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form_input_label {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #ffac00;
+}
+
+.form_input {
+  display: block;
+  width: 90%;
+  margin: 0.8rem auto;
+  padding: 0.4rem 0.2rem;
+}
+
+.form_select_radio_container {
+  text-align: center;
+}
+
+.form_select_container {
+  display: inline-block;
+}
+
+.form_select {
+  padding: 0 0.7rem;
+}
+
+.form_radio_container {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.form_button_container {
+  text-align: center;
+}
+
+.form_button {
+  color: white;
+  padding: 0.4rem 1.4rem;
+  background-color: #3d9c23;
+  border: 2px solid rgb(31, 107, 10);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.bmi_container,
+.bmr_container {
+  color: black;
+  display: inline-block;
+  width: 48%;
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.bmr_container {
+  float: right; /* Please, keep this cuz i dont know why it works. Apparantly i'm not good at css */
+}
+
+.bmi_title {
+  color: thistle;
+  background-color: #9c233d;
+  padding: 0.4rem;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.bmr_title {
+  color: thistle;
+  background-color: #233d9c;
+  padding: 0.4rem;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.bmi {
+  /* background-color: #6e818d; */
+  color: black;
+  background-color: #e2e2e2;
+  padding: 0.6rem;
+  height: 7.2rem;
+  border-left: 3px solid #9c233d;
+  border-right: 3px solid #9c233d;
+}
+
+.bmr {
+  color: black;
+  background-color: #e2e2e2;
+  padding: 0.6rem;
+  height: 7.2rem;
+  border-left: 3px solid #233d9c;
+  border-right: 3px solid #233d9c;
+}
+
+.bmi_res {
+	color: black;
+	background-color: #c5c5c5;
+	float: left;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.6rem;
+	border-left: 3px solid #9c233d;
+  border-right: 3px solid #9c233d;
+  border-bottom: 3px solid #9c233d;
+	border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.bmr_res {
+	color: black;
+	background-color: #c5c5c5;
+	box-sizing: border-box;
+	width: 100%;
+  float: right;
+  text-align: left;
+	padding: 0.6rem;
+	border-left: 3px solid #233d9c;
+  border-right: 3px solid #233d9c;
+  border-bottom: 3px solid #233d9c;
+	border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}

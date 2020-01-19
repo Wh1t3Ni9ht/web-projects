@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Body calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Body Calculator</h1>
+        </div>
+        <form class="form_container">
+            <div class="form_inputs_container">
+                <div class="input_container">
+                    <label class="form_input_label">Weight in KG</label>
+                    <input type="number" id="weight-input" class="form_input" required>
+                </div>
+
+                <div class="input_container">
+                    <label class="form_input_label">Height in meters</label>
+                    <input type="number" id="height-input" class="form_input" step="0.01" required>
+                </div>
+            </div>
+            <div class="form_select_radio_container">
+                <div class="form_select_container">
+                    <select id="form-select" class="form_select" required></select>
+                </div>
+                <div class="form_radio_container" id="radio-container">
+                    <label class="form_radio_label">Male</label>
+                    <input type="radio" name="gender" value="male" id="male" required>
+                    <label class="form_radio_label">Female</label>
+                    <input type="radio" name="gender" value="female" id="female" required>
+                </div>
+            </div>
+            <div class="form_button_container">
+                <button type="submit" id="calc-btn" class="form_button">Calculate</button>
+            </div>
+        </form>
+
+            <div class="bmi_container">
+                <div class="bmi_title">BMI</div>
+                <div class="bmi">
+                    Body mass index (BMI) is a measure of body fat based on your weight in relation to your height, and applies to most adult men and women aged 18 and over. For children aged 2 and over, BMI percentile is the best assessment of body fat.
+                </div>
+                <div id="bmi-result" class="bmi_res"></div>
+            </div>
+            <div class="bmr_container">
+                <div class="bmr_title">BMR</div>
+                <div class="bmr">Basal Metabolic Rate (BMR) is an estimate of how many calories you'd burn if you were to do nothing but rest for 24 hours. It represents the minimum amount of energy needed to keep your body functioning. </div>
+                <div id="bmr-result" class="bmr_res"></div>
+            </div>
+        </div>
+    </div> 
+
+</body><script src="main.js"></script>
+</html>
